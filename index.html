@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drill1: Basic Calculator Display</title>
+  <style>
+    body {
+      font-family: 'Gill Sans';
+      background-color: #cbdfe9;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      font-size: 30px;
+      height: 10px;
+    }
+    h2 {
+      color: #ffffff;
+      text-align: center;
+      margin: 5px 0 20px 0;
+      background-color: #2e596f;
+      padding: 10px;
+    }
+    .container {
+      padding: 20px;
+      line-height: 2;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container" id="output">
+    <h2>Basic Calculator Display</h2>
+  </div>
+      <script>
+        // String
+          let addition = "Addition";
+          let subtraction = "Subtractin";
+          let multiplication = "Multiplication";
+          let division = "Division";
+
+        // Number
+          let num1 = 10;
+          let num2 = 20;
+
+          let sum = num1 + num2;
+          let difference = num1 - num2;
+          let product = num1 * num2;
+          let quotient = num1 / num2;
+          
+          document.getElementById("output").innerHTML = 
+          "<h2>Basic Calculator Display</h2>" + 
+          "Addition<br>" + num1 + "+" + num2 + "=" + sum +
+          "<br>Subtraction<br>" + num1 + "-" + num2 + "=" + difference +
+          "<br>Multiplication<br>" + num1 + "x" + num2 + "=" + product +
+          "<br>Division<br>" + num1 + "/" + num2 + "=" + quotient;
+        </script>
+</body>
+</html>
